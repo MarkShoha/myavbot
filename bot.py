@@ -25,7 +25,7 @@ def start(m):
         key_oven1 = types.KeyboardButton(text='отправить телефон',request_contact=True)
         # И добавляем кнопку на экран
         keyboard.add(key_oven1)
-        bot.send_message(m.chat.id, 'Авторизуйтесь!',reply_markup=keyboard)
+        bot.send_message(m.chat.id, 'Авторизуйтесь!Авторизовавшись вы даёте согласие на просмтр ваших данных(номер телефона)',reply_markup=keyboard)
 
 
 @bot.message_handler(content_types=['text'])
