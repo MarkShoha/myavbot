@@ -339,7 +339,7 @@ def callback_worker(call):
         keyboard.add(key_oven111111111111)
         bot.send_message(call.message.chat.id,'Предварительная кредитная заявка отменена',reply_markup=keyboard)
 
-        bot.send_message(call.message.chat.id, 'Оформить осаго онлайн', reply_markup=keyboard)
+      
     if call.data == 'sale':
         keyboard = types.InlineKeyboardMarkup()
         # По очереди готовим текст и обработчик для каждого знака зодиака
